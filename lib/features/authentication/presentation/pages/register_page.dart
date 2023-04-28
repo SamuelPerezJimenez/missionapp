@@ -72,10 +72,14 @@ class RegisterPage extends StatelessWidget {
                         return 'Por favor ingrese una contraseña';
                       } else if (value.length < 10 || value.length > 60) {
                         return 'La contraseña debe tener entre 10 y 60 caracteres';
-                      } else if (!RegExp(
-                              r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$')
-                          .hasMatch(value)) {
-                        return 'La contraseña debe tener al menos una letra mayúscula, una minúscula, un número y un carácter especial';
+                      } else if (!RegExp(r'^(?=.*[a-z])').hasMatch(value)) {
+                        return 'Debe contener al menos una letra minúscula';
+                      } else if (!RegExp(r'^(?=.*[A-Z])').hasMatch(value)) {
+                        return 'Debe contener al menos una letra mayúscula';
+                      } else if (!RegExp(r'^(?=.*\d)').hasMatch(value)) {
+                        return 'Debe contener al menos un número';
+                      } else if (!RegExp(r'^(?=.*[@$!%*?&])').hasMatch(value)) {
+                        return 'Debe contener al menos un carácter especial';
                       }
                       return null;
                     },

@@ -47,8 +47,8 @@ La vista de usuario muestra información personalizada para el usuario que ha in
 <p float="left">
   <img src="https://user-images.githubusercontent.com/56012784/235073097-ca077d40-4591-4693-96f0-fbe334946d4c.png" width="200" />
   <img src="https://user-images.githubusercontent.com/56012784/235073137-e37c6a29-eb8a-4c61-a8d9-13f52532f5bf.png" width="200" />
-  <img src="https://user-images.githubusercontent.com/56012784/235073108-5b64159d-65d0-421d-b1dd-2f2a90ea0760.png" width="200" />
-  <img src="https://user-images.githubusercontent.com/56012784/235073162-5c56ca9a-575f-4590-9597-5847499a7e0a.png" width="200" />
+  <img src="https://user-images.githubusercontent.com/56012784/235074945-3d42c72f-e55f-4f2f-95aa-dab95c1477be.PNG" width="200" />
+
 </p>
 
 ### Vista de contactos
@@ -56,6 +56,7 @@ La vista de usuario muestra información personalizada para el usuario que ha in
 La vista de contactos permite al usuario ver un listado de sus contactos y añadir nuevos contactos. También incluye un campo de búsqueda para buscar contactos por nombre.
 
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/56012784/235073280-011560ee-c35e-462f-a976-b0d09a3df6bc.png" width="200" />
-  <img src="https://user-images.githubusercontent.com/56012784/235073304-81f8b92d-a563-4813-a621-5c556d8e1191.png" width="200" />
+
+  <img src="https://user-images.githubusercontent.com/56012784/235074623-c84893e7-ff09-4eed-83c9-4c16537cd51c.PNG" width="200" />
+  <img src="https://user-images.githubusercontent.com/56012784/235074747-591c5b04-e5f6-47aa-a270-74d0c5f8a11a.PNG" width="200" />
 </p>

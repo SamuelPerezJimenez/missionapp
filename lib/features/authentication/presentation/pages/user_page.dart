@@ -57,7 +57,7 @@ class UserProfilePageState extends State<UserProfilePage> {
                             Navigator.of(context).pop();
                           },
                           onNoPressed: () {
-                            Navigator.of(context).pop(); // Close the dialog
+                            Navigator.of(context).pop();
                           },
                         ),
                       );
@@ -127,18 +127,14 @@ class UserProfilePageState extends State<UserProfilePage> {
   }
 
   Future<void> _getImage(ImageSource source) async {
-    // Selecciona una nueva imagen.
     final pickedImage = await ImagePicker().pickImage(source: source);
     if (pickedImage != null) {
-      // Obtiene el directorio de documentos del dispositivo.
       final documentsDirectory = await getApplicationDocumentsDirectory();
 
-      // Copia la imagen seleccionada al directorio de documentos con un nombre de archivo único.
       final currentTime = DateTime.now().millisecondsSinceEpoch;
       final newImageFile = await File(pickedImage.path)
           .copy('${documentsDirectory.path}/$currentTime.jpg');
 
-      // Actualiza la imagen de perfil del usuario.
       if (mounted) {
         context.read<AuthenticationBloc>().add(
               UpdateProfileImageEvent(

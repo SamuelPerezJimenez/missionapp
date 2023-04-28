@@ -15,15 +15,13 @@ class RoundedElevatedButton extends StatelessWidget {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        borderRadius:
-            BorderRadius.circular(8.0), // Ajusta el redondeo de los bordes aquí
+        borderRadius: BorderRadius.circular(8.0),
       ),
       child: ElevatedButton(
         style: ButtonStyle(
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(
-                  8.0), // Asegúrate de que el borderRadius aquí sea el mismo que en el Container
+              borderRadius: BorderRadius.circular(8.0),
             ),
           ),
         ),
